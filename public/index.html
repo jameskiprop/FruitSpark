@@ -4,32 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FruitSpark.com</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-yellow-500">
     <!-- Background container -->
     <div
-      class="bg-cover bg-center"
-      style="background-image: URL ('background-image')"
+      class="bg-cover bg-center min-h-screen"
+      style="background-image: url('spark.jpg')"
     >
       <!-- Navbar and logo area -->
-      <div class="container">
-        <div class="flex items-center bg-blend-normal p-4">
-          <h1 class="text-black mr-7 text-4xl">FruitSpark</h1>
-          <nav class="relative flex pt-2 flex-grow rounded-full">
-            <div class="ml-6 flex items-center space-x-7 hover:red-500">
-              <a href="#" class="black">Dashboard</a>
-              <a href="#" class="black">Fruit Log</a>
-              <a href="#" class="black">Nutrient Tracker</a>
-              <a href="#" class="black">Fruitopedia</a>
-              <a href="#" class="black">Progress Reports</a>
-              <a href="#" class="black">Challenges</a>
-              <a href="#" class="black">My Goals</a>
-              <a href="#" class="black">Community</a>
-            </div>
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between p-4">
+          <h1 class="text-black text-4xl font-bold">FruitSpark</h1>
+          <nav class="flex space-x-7">
+            <a href="#" class="text-black hover:text-white p-2">Dashboard</a>
+            <a href="#" class="text-black hover:text-white p-2">Fruit Log</a>
+            <a href="#" class="text-black hover:text-white p-2"
+              >Nutrient Tracker</a
+            >
+
+            <a
+              href="#"
+              class="text-black hover:text-white p-2 bg-gray hover:orange-600"
+              >Challenges</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-white p-2 bg-gray hover:orange-600"
+              >My Goals</a
+            >
+            <a
+              href="#"
+              class="text-black hover:text-white p-2 bg-gray hover:orange-600"
+              >Community</a
+            >
           </nav>
         </div>
       </div>
+
       <!-- Hero-section -->
       <section class="text-white py-20">
         <div class="container mx-auto px-6 text-center">
@@ -38,7 +50,7 @@
           >
             Fuel Your Day, One Fruit at a Time
           </h1>
-          <p class="text-gray-600 text-lg md:text-xl lg:text-2xl mb-16">
+          <p class="text-gray-600 text-lg md:text-xl lg:text-2xl mb-4">
             Nourish Your Body, Empower Your Life
           </p>
           <p class="text-gray-600 text-lg md:text-xl lg:text-2xl mb-16">
@@ -46,11 +58,88 @@
           </p>
           <a
             href="#"
-            class="bg-red-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-duration-300 hover:bg-gray-300 mb-20"
-            >Get Started</a
+            class="bg-red-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 hover:bg-gray-300"
           >
+            Get Started
+          </a>
+        </div>
+
+        <!-- Dashboard content -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16 px-6"
+        >
+          <!-- Daily Tracker Card -->
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">
+              Daily Tracker
+            </h2>
+            <p class="text-gray-600">Track your daily fruit intake here.</p>
+            <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded-md">
+              Log Fruits
+            </button>
+          </div>
+
+          <!-- Fruit Database Card -->
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">
+              Fruit Database
+            </h2>
+            <p class="text-gray-600">
+              Explore nutritional information on various fruits.
+            </p>
+            <button class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded-md">
+              View Database
+            </button>
+          </div>
+
+          <!-- Progress Reports Card -->
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">
+              Progress Reports
+            </h2>
+            <p class="text-gray-600">Check your weekly or monthly progress.</p>
+            <button class="mt-4 bg-purple-500 text-white px-4 py-2 rounded-md">
+              View Reports
+            </button>
+          </div>
+
+          <!-- Nutrient Analysis Card -->
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">
+              Nutrient Analysis
+            </h2>
+            <p class="text-gray-600">
+              Analyze the nutritional content of your fruits.
+            </p>
+            <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-md">
+              Analyze Now
+            </button>
+          </div>
+
+          <!-- Recommendations Card -->
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">
+              Recommendations
+            </h2>
+            <p class="text-gray-600">Get personalized fruit recommendations.</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md">
+              Get Recommendations
+            </button>
+          </div>
+
+          <!-- Reminders Card -->
+          <div class="bg-white p-6 rounded-md shadow-md">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Reminders</h2>
+            <p class="text-gray-600">
+              Set up daily reminders for fruit consumption.
+            </p>
+            <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-md">
+              Set Reminders
+            </button>
+          </div>
         </div>
       </section>
     </div>
   </body>
 </html>
+```
