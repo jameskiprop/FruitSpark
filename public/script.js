@@ -30,4 +30,46 @@ viewDatabaseBtn.addEventListener("click", function loadFruitDatabase() {
   alert(fruitList);
 });
 
-//function
+//view reports button
+document
+  .getElementById("viewReportsBtn")
+  .addEventListener("click", function () {
+    const reportContent = document.getElementById("reportContent");
+    // Toggle the visibility of the report content
+    reportContent.classList.toggle("hidden");
+  });
+
+//Analyze now button
+document.getElementById("analyzeNowBtn").addEventListener("click", function () {
+  const analysisContent = document.getElementById("analysisContent");
+  //toggling the visibility of the analysis content
+  analysisContent.classList.toggle("hidden");
+});
+
+//recommendations button
+document
+  .getElementById("recommendationsBtn")
+  .addEventListener("click", function () {
+    const recommendationsContent = document.getElementById(
+      "recommendationsContent"
+    );
+    // Toggling the visibility of the recommendations content
+    recommendationsContent.classList.toggle("hidden");
+  });
+
+///remider button
+document.getElementById("remindersBtn").addEventListener("click", function () {
+  const remindersContent = document.getElementById("remindersContent");
+  // Toggling the visibility of the reminders content
+  remindersContent.classList.toggle("hidden");
+});
+
+//Handle the form submission (e.g., saving the reminder)
+document
+  .getElementById("reminderForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const time = document.getElementById("time").value;
+    alert(`Reminder set for ${time}`);
+    // saving the reminder or display a confirmation message
+  });

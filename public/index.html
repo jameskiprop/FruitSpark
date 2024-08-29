@@ -165,7 +165,17 @@
         >
           View Reports
         </button>
+        <!--  displaying the reports -->
+        <div id="reportContent" class="mt-4 hidden">
+          <h3 class="text-lg font-medium text-gray-700 mb-2">Your Reports:</h3>
+          <ul class="list-disc pl-6 text-gray-600">
+            <li>Week 1: Completed 5 out of 7 goals</li>
+            <li>Week 2: Completed 6 out of 7 goals</li>
+            <li>Month 1: Completed 20 out of 28 goals</li>
+          </ul>
+        </div>
       </div>
+
       <!-- Nutrient Analysis Card -->
       <div class="bg-white p-6 rounded-md shadow-md">
         <h2 class="text-xl font-semibold text-gray-800 mb-4">
@@ -180,6 +190,17 @@
         >
           Analyze Now
         </button>
+        <!-- displaying the analysis results -->
+        <div id="analysisContent" class="mt-4 hidden">
+          <h3 class="text-lg font-medium text-gray-700 mb-2">
+            Analysis Results:
+          </h3>
+          <ul class="list-disc pl-6 text-gray-600">
+            <li>Apple: 95 kcal, 25g carbs, 4g fiber, 0.3g protein</li>
+            <li>Banana: 105 kcal, 27g carbs, 3g fiber, 1.3g protein</li>
+            <li>Orange: 62 kcal, 15g carbs, 3g fiber, 1.2g protein</li>
+          </ul>
+        </div>
       </div>
       <!-- Recommendations Card -->
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -193,6 +214,18 @@
         >
           Get Recommendations
         </button>
+        <!-- container for displaying the recommendations -->
+        <div id="recommendationsContent" class="mt-4 hidden">
+          <h3 class="text-lg font-medium text-gray-700 mb-2">
+            Your Recommendations:
+          </h3>
+          <ul class="list-disc pl-6 text-gray-600">
+            <li>Apples: Great for fiber and vitamin C.</li>
+            <li>Bananas: Perfect for potassium and energy.</li>
+            <li>Oranges: Excellent source of vitamin C.</li>
+            <li>Blueberries: Packed with antioxidants.</li>
+          </ul>
+        </div>
       </div>
       <!-- Reminders Card -->
       <div class="bg-white p-6 rounded-md shadow-md">
@@ -207,6 +240,27 @@
         >
           Set Reminders
         </button>
+        <!--displaying the reminder set up on the club -->
+        <div id="remindersContent" class="mt-4 hidden">
+          <h3 class="text-lg font-medium text-gray-700 mb-2">
+            Set Your Reminders:
+          </h3>
+          <form id="reminderForm" class="text-gray-600">
+            <label for="time" class="block mb-2">Choose time:</label>
+            <input
+              type="time"
+              id="time"
+              name="time"
+              class="px-4 py-2 border rounded-md mb-4"
+            />
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-500"
+            >
+              Save Reminder
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -247,6 +301,7 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
 ```
