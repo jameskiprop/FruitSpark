@@ -127,10 +127,10 @@
     <!-- Dashboard content -->
     <h2 class="text-center font-bold text-3xl mt-4">Dashboard</h2>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 px-6"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 px-6"
     >
       <!-- Daily Tracker Card -->
-      <div class="bg-white p-6 rounded-md shadow-md">
+      <div class="bg-white p-6 rounded-md shadow-md col-span-1 lg:col-span-2">
         <h2 class="text-xl font-semibold text-gray-800 mb-4">Daily Tracker</h2>
         <p class="text-gray-600">Track your daily fruit intake here.</p>
         <button
@@ -141,7 +141,9 @@
         </button>
       </div>
       <!-- Fruit Database Card -->
-      <div class="bg-white p-6 rounded-md shadow-md">
+      <div
+        class="bg-white p-6 rounded-md shadow-md col-span-1 md:col-span-2 lg:col-span-2"
+      >
         <h2 class="text-xl font-semibold text-gray-800 mb-4">Fruit Database</h2>
         <p class="text-gray-600">
           Explore nutritional information on various fruits.
@@ -154,18 +156,18 @@
         </button>
       </div>
       <!-- Progress Reports Card -->
-      <div class="bg-white p-6 rounded-md shadow-md">
+      <div class="bg-white p-6 rounded-md shadow-md col-span-1 lg:col-span-3">
         <h2 class="text-xl font-semibold text-gray-800 mb-4">
           Progress Reports
         </h2>
         <p class="text-gray-600">Check your weekly or monthly progress.</p>
         <button
           id="viewReportsBtn"
-          class="mt-4 bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-gray-500"
+          class="mt-4 bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-gray-500 flex flex-grow"
         >
           View Reports
         </button>
-        <!--  displaying the reports -->
+        <!--  container for displaying the reports -->
         <div id="reportContent" class="mt-4 hidden">
           <h3 class="text-lg font-medium text-gray-700 mb-2">Your Reports:</h3>
           <ul class="list-disc pl-6 text-gray-600">
@@ -177,7 +179,7 @@
       </div>
 
       <!-- Nutrient Analysis Card -->
-      <div class="bg-white p-6 rounded-md shadow-md">
+      <div class="bg-white p-6 rounded-md shadow-md col-span-1 lg:row-span-2">
         <h2 class="text-xl font-semibold text-gray-800 mb-4">
           Nutrient Analysis
         </h2>
@@ -202,33 +204,8 @@
           </ul>
         </div>
       </div>
-      <!-- Recommendations Card -->
-      <div class="bg-white p-6 rounded-md shadow-md">
-        <h2 class="text-xl font-semibold text-gray-800 mb-4">
-          Recommendations
-        </h2>
-        <p class="text-gray-600">Get personalized fruit recommendations.</p>
-        <button
-          id="recommendationsBtn"
-          class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-gray-500"
-        >
-          Get Recommendations
-        </button>
-        <!-- container for displaying the recommendations -->
-        <div id="recommendationsContent" class="mt-4 hidden">
-          <h3 class="text-lg font-medium text-gray-700 mb-2">
-            Your Recommendations:
-          </h3>
-          <ul class="list-disc pl-6 text-gray-600">
-            <li>Apples: Great for fiber and vitamin C.</li>
-            <li>Bananas: Perfect for potassium and energy.</li>
-            <li>Oranges: Excellent source of vitamin C.</li>
-            <li>Blueberries: Packed with antioxidants.</li>
-          </ul>
-        </div>
-      </div>
       <!-- Reminders Card -->
-      <div class="bg-white p-6 rounded-md shadow-md">
+      <div class="bg-white p-6 rounded-md shadow-md col-span-1 lg:col-span-1">
         <h2 class="text-xl font-semibold text-gray-800 mb-4">Reminders</h2>
         <p class="text-gray-600">
           Set up daily reminders for fruit consumption.
@@ -260,6 +237,35 @@
               Save Reminder
             </button>
           </form>
+        </div>
+      </div>
+      <!-- Recommendations Card -->
+      <div
+        class="bg-white p-6 rounded-md shadow-md col-span-1 lg:col-span-2 flex flex-col"
+      >
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+          Recommendations
+        </h2>
+        <p class="text-gray-600 flex-grow">
+          Get personalized fruit recommendations.
+        </p>
+        <button
+          id="recommendationsBtn"
+          class="mt-auto bg-blue-500 text-white px-2 py-1 text-sm rounded-md hover:bg-gray-500"
+        >
+          Get Recommendations
+        </button>
+        <!-- container for displaying the recommendations -->
+        <div id="recommendationsContent" class="mt-4 hidden">
+          <h3 class="text-lg font-medium text-gray-700 mb-2">
+            Your Recommendations:
+          </h3>
+          <ul class="list-disc pl-6 text-gray-600">
+            <li>Apples: Great for fiber and vitamin C.</li>
+            <li>Bananas: Perfect for potassium and energy.</li>
+            <li>Oranges: Excellent source of vitamin C.</li>
+            <li>Blueberries: Packed with antioxidants.</li>
+          </ul>
         </div>
       </div>
     </div>
