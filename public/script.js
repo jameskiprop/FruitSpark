@@ -73,4 +73,65 @@ document
     alert(`Reminder set for ${time}`);
     // saving the reminder or display a confirmation message
   });
-  
+import React from "react";
+
+function App() {
+  return (
+    <div className="bg-yellow-500 min-h-screen">
+      <header className="container p-4">
+        <nav className="flex justify-between items-center">
+          <h1 className="text-yellow-400 text-5xl font-poppins">FruitSpark</h1>
+          <div className="space-x-4">
+            <button
+              onClick={() => document.documentElement.classList.toggle("dark")}
+              className="text-white"
+            >
+              Toggle Dark Mode
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="text-white text-center py-20">
+        <h1 className="text-lime-400 text-7xl font-bold">
+          Fuel Your Day, One Fruit at a Time
+        </h1>
+        <p className="text-white-600 text-2xl mt-5">
+          Nourish Your Body, Empower Your Life
+        </p>
+        <a
+          href="#"
+          className="bg-lime-500 text-white text-xl py-3 px-8 mt-10 rounded-full shadow-lg hover:bg-green-800 transform hover:scale-105 transition-transform duration-300"
+        >
+          Get Started
+        </a>
+      </section>
+
+      {/* Dashboard */}
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4 px-6">
+        {/* Tracker */}
+        <div className="bg-white p-6 rounded-md shadow-md">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">
+            Daily Tracker
+          </h2>
+          <p className="text-gray-600">Track your daily fruit intake here.</p>
+        </div>
+        {/* More sections */}
+      </div>
+
+      <footer className="text-white py-6 bg-gray-600">
+        <div className="container mx-auto flex justify-between items-center">
+          <p>© 2024 FruitSpark. All Rights Reserved.</p>
+          <div className="space-x-4">
+            <a href="https://facebook.com" className="text-white">
+              <i className="fab fa-facebook fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
