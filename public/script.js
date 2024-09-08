@@ -20,7 +20,6 @@ viewDatabaseBtn.addEventListener("click", function loadFruitDatabase() {
   const fruits = [
     { name: "Apple", calories: 52, sugar: "10g" },
     { name: "Banana", calories: 96, sugar: "12g" },
-    { name: "Orange", calories: 43, sugar: "8g" },
   ];
   const fruitList = fruits
     .map(
